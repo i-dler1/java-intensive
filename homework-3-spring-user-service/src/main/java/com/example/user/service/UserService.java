@@ -1,70 +1,64 @@
 package com.example.user.service;
 
-import com.example.user.dao.UserDao;
-import com.example.user.dao.UserDaoImpl;
+import com.example.user.dto.UserRequestDto;
+import com.example.user.dto.UserResponseDto;
 import com.example.user.entity.User;
-import com.example.user.util.HibernateUtil;
+import com.example.user.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
+@Service
+@RequiredArgsConstructor
 public class UserService {
 
-    private final UserDao userDao;
+    private final UserRepository userRepository;
 
-    public UserService() {
-        this.userDao = new UserDaoImpl(HibernateUtil.getSessionFactory());
-    }
-
-    // Валидация
-    private void validateUser(String name, String email, int age) {
-        if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException("Имя не может быть пустым");
-        }
-        if (email == null || !Pattern.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$", email)) {
-            throw new IllegalArgumentException("Некорректный формат email");
-        }
-        if (age < 0 || age > 150) {
-            throw new IllegalArgumentException("Возраст должен быть от 0 до 150");
-        }
-    }
-
-    public User createUser(String name, String email, int age) {
-        validateUser(name, email, age);
+    public UserResponseDto createUser(UserRequestDto dto) {
         User user = new User();
-        user.setName(name);
-        user.setEmail(email);
-        user.setAge(age);
-        return userDao.save(user);
+        user.setName(dto.getName());
+        user.setEmail(dto.getEmail());
+        user.setAge(dto.getAge());
+        User saved = userRepository.save(user);
+        return toResponseDto(saved);
     }
 
-    public User findUserById(Long id) {
-        if (id == null || id <= 0) {
-            throw new IllegalArgumentException("ID должен быть положительным числом");
-        }
-        return userDao.findById(id);
+    public UserResponseDto getUserById(Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+        return toResponseDto(user);
     }
 
-    public List<User> findAllUsers() {
-        return userDao.findAll();
+    public List<UserResponseDto> getAllUsers() {
+        return userRepository.findAll().stream()
+                .map(this::toResponseDto)
+                .collect(Collectors.toList());
     }
 
-    public User updateUser(Long id, String name, String email, int age) {
-        validateUser(name, email, age);
-        User existing = findUserById(id);
-        if (existing == null) {
-            throw new RuntimeException("Пользователь с ID " + id + " не найден");
-        }
-        existing.setName(name);
-        existing.setEmail(email);
-        existing.setAge(age);
-        return userDao.save(existing);
+    @Transactional
+    public UserResponseDto updateUser(Long id, UserRequestDto dto) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+        user.setName(dto.getName());
+        user.setEmail(dto.getEmail());
+        user.setAge(dto.getAge());
+        return toResponseDto(user);
     }
 
     public void deleteUser(Long id) {
-        if (id == null || id <= 0) {
-            throw new IllegalArgumentException("ID должен быть положительным числом");
-        }
-        userDao.delete(id);
+        userRepository.deleteById(id);
+    }
+
+    private UserResponseDto toResponseDto(User user) {
+        UserResponseDto dto = new UserResponseDto();
+        dto.setId(user.getId());
+        dto.setName(user.getName());
+        dto.setEmail(user.getEmail());
+        dto.setAge(user.getAge());
+        dto.setCreatedAt(user.getCreatedAt());
+        return dto;
     }
 }
