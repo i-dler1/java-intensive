@@ -71,6 +71,14 @@ class UserControllerTest {
     }
 
     @Test
+    void getUser_ShouldReturn404_WhenUserNotFound() throws Exception {
+        when(userService.getUserById(99L)).thenThrow(new RuntimeException("User not found with id: 99"));
+
+        mockMvc.perform(get("/api/users/99"))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
     void updateUser_ShouldReturnUpdatedUser() throws Exception {
         UserRequestDto request = new UserRequestDto();
         request.setName("Анна Иванова");
@@ -94,8 +102,56 @@ class UserControllerTest {
     }
 
     @Test
+    void updateUser_ShouldReturn404_WhenUserNotFound() throws Exception {
+        UserRequestDto request = new UserRequestDto();
+        request.setName("Анна");
+        request.setEmail("anna@mail.com");
+        request.setAge(25);
+
+        when(userService.updateUser(eq(99L), any(UserRequestDto.class)))
+                .thenThrow(new RuntimeException("User not found with id: 99"));
+
+        mockMvc.perform(put("/api/users/99")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(request)))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
     void deleteUser_ShouldReturnNoContent() throws Exception {
         mockMvc.perform(delete("/api/users/1"))
                 .andExpect(status().isNoContent());
+    }
+
+    @Test
+    void createUser_ShouldReturn400_WhenNameIsEmpty() throws Exception {
+        UserRequestDto request = new UserRequestDto();
+        request.setName("");
+        request.setEmail("anna@mail.com");
+        request.setAge(25);
+
+        when(userService.createUser(any(UserRequestDto.class)))
+                .thenThrow(new IllegalArgumentException("Имя не может быть пустым"));
+
+        mockMvc.perform(post("/api/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(request)))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    void createUser_ShouldReturn400_WhenEmailIsInvalid() throws Exception {
+        UserRequestDto request = new UserRequestDto();
+        request.setName("Анна");
+        request.setEmail("invalid-email");
+        request.setAge(25);
+
+        when(userService.createUser(any(UserRequestDto.class)))
+                .thenThrow(new IllegalArgumentException("Некорректный формат email"));
+
+        mockMvc.perform(post("/api/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(request)))
+                .andExpect(status().isBadRequest());
     }
 }
