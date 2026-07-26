@@ -3,6 +3,7 @@ package com.example.user.controller;
 import com.example.user.dto.UserRequestDto;
 import com.example.user.dto.UserResponseDto;
 import com.example.user.service.UserService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +19,7 @@ public class UserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public UserResponseDto createUser(@RequestBody UserRequestDto dto) {
+    public UserResponseDto createUser(@Valid @RequestBody UserRequestDto dto) {
         return userService.createUser(dto);
     }
 
@@ -33,7 +34,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public UserResponseDto updateUser(@PathVariable Long id, @RequestBody UserRequestDto dto) {
+    public UserResponseDto updateUser(@PathVariable Long id, @Valid @RequestBody UserRequestDto dto) {
         return userService.updateUser(id, dto);
     }
 
