@@ -3,6 +3,7 @@ package com.example.user.service;
 import com.example.user.dto.UserRequestDto;
 import com.example.user.dto.UserResponseDto;
 import com.example.user.entity.User;
+import com.example.user.kafka.UserEventProducer;
 import com.example.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final UserEventProducer userEventProducer;
 
     public UserResponseDto createUser(UserRequestDto dto) {
         User user = new User();
@@ -23,6 +25,7 @@ public class UserService {
         user.setEmail(dto.getEmail());
         user.setAge(dto.getAge());
         User saved = userRepository.save(user);
+        userEventProducer.sendUserEvent(saved.getEmail(), "CREATE");
         return toResponseDto(saved);
     }
 
@@ -49,7 +52,10 @@ public class UserService {
     }
 
     public void deleteUser(Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
         userRepository.deleteById(id);
+        userEventProducer.sendUserEvent(user.getEmail(), "DELETE");
     }
 
     private UserResponseDto toResponseDto(User user) {
