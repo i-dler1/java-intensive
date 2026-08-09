@@ -5,44 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81468ec0-24c1-4ee6-bf7d-0ff630cb3c52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/968c29c2-abac-480f-a3e8-bec4b947c82d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/968c29c2-abac-480f-a3e8-bec4b947c82d/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/968c29c2-abac-480f-a3e8-bec4b947c82d/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/968c29c2-abac-480f-a3e8-bec4b947c82d/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/968c29c2-abac-480f-a3e8-bec4b947c82d/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/SpringUserServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/controller/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/dto/UserRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/dto/UserResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/kafka/UserEventProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/com/example/user/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-3-spring-user-service/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/dto/EmailRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/dto/EmailRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/service/KafkaConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/service/KafkaConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework-5-notification-service/src/main/java/com/example/notification/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/src/test/java/com/example/notification/NotificationServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework-5-notification-service/src/test/java/com/example/notification/NotificationServiceIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/com/example/notification/NotificationApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/com/example/notification/controller/NotificationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/com/example/notification/dto/EmailRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/com/example/notification/dto/UserEventDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/com/example/notification/exception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/com/example/notification/service/KafkaConsumerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/com/example/notification/service/NotificationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/test-classes/com/example/notification/NotificationServiceIntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/test-classes/com/example/notification/controller/NotificationControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework-5-notification-service/target/test-classes/com/example/notification/service/NotificationServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +66,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.NotificationApplication.executor": "Run",
     "Spring Boot.SpringUserServiceApplication (1).executor": "Run",
+    "Spring Boot.SpringUserServiceApplication (2).executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "feature/spring-migration",
@@ -144,13 +111,14 @@
             <map>
               <entry key="NotificationApplication" value="STOPPED" />
               <entry key="SpringUserServiceApplication (1)" value="STOPPED" />
+              <entry key="SpringUserServiceApplication (2)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NotificationServiceIntegrationTest">
+  <component name="RunManager" selected="Spring Boot.SpringUserServiceApplication (2)">
     <configuration name="NotificationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-user-service (1)" />
       <extension name="coverage">
@@ -231,6 +199,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringUserServiceApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-user-service (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringUserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notification.SpringUserServiceApplication" />
@@ -277,7 +252,7 @@
       <workItem from="1785007896279" duration="2222000" />
       <workItem from="1785041560507" duration="1305000" />
       <workItem from="1785694694438" duration="7221000" />
-      <workItem from="1786288100353" duration="1012000" />
+      <workItem from="1786288100353" duration="2634000" />
     </task>
     <servers />
   </component>
