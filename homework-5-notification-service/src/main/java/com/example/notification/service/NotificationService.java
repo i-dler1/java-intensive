@@ -16,8 +16,7 @@ public class NotificationService {
     public void sendNotification(String email, String operationType) {
         String subject = "Уведомление";
         String text = switch (operationType) {
-            case "CREATE" -> "Здравствуйте! Ваш аккаунт на сайте был успешно создан.";
-            case "DELETE" -> "Здравствуйте! Ваш аккаунт был удалён.";
+            case "CREATE" -> "Здравствуйте! Ваш аккаунт на сайте ваш сайт был успешно создан.";            case "DELETE" -> "Здравствуйте! Ваш аккаунт был удалён.";
             default -> "Произошло изменение в вашем аккаунте.";
         };
 
