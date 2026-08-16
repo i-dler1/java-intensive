@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81468ec0-24c1-4ee6-bf7d-0ff630cb3c52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/java/com/example/config/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/resources/config/gateway-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/resources/config/user-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/com/example/config/ConfigServerApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/config/gateway-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/config/user-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/discovery-service/discovery-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework-7-cloud/gateway-service/gateway-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="81468ec0-24c1-4ee6-bf7d-0ff630cb3c52" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,51 +39,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.All in User-Service.executor": "Coverage",
-    "JUnit.GatewayApplicationTests.contextLoads.executor": "Debug",
-    "JUnit.NotificationControllerTest.executor": "Coverage",
-    "JUnit.NotificationServiceIntegrationTest.executor": "Coverage",
-    "JUnit.NotificationServiceTest.executor": "Coverage",
-    "JUnit.UserControllerTest.executor": "Coverage",
-    "JUnit.UserDaoImplTest.executor": "Coverage",
-    "JUnit.UserServiceTest.executor": "Coverage",
-    "Maven.User-Service [clean].executor": "Run",
-    "Maven.notification-service [clean].executor": "Run",
-    "Maven.spring-user-service [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.DiscoveryApplication.executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.NotificationApplication.executor": "Run",
-    "Spring Boot.SpringUserServiceApplication (1).executor": "Run",
-    "Spring Boot.SpringUserServiceApplication (2).executor": "Run",
-    "Spring Boot.SpringUserServiceApplication (3).executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "feature/spring-migration",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/ASTON/Интенсив/Дз/User-Service/src/main/java/com/masterly/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4597701",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in User-Service.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.GatewayApplicationTests.contextLoads.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.NotificationControllerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.NotificationServiceIntegrationTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.NotificationServiceTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.UserDaoImplTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.User-Service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.notification-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring-user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringUserServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringUserServiceApplication (2).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringUserServiceApplication (3).executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/spring-migration&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/ASTON/Интенсив/Дз/User-Service/src/main/java/com/masterly/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4597701&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.notification.service" />
@@ -277,7 +258,7 @@
       <workItem from="1785041560507" duration="1305000" />
       <workItem from="1785694694438" duration="7221000" />
       <workItem from="1786288100353" duration="4031000" />
-      <workItem from="1786898488158" duration="8819000" />
+      <workItem from="1786898488158" duration="9155000" />
     </task>
     <servers />
   </component>
