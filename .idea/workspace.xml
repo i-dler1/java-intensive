@@ -5,6 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81468ec0-24c1-4ee6-bf7d-0ff630cb3c52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/java/com/example/config/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/resources/config/gateway-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/src/main/resources/config/user-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/com/example/config/ConfigServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/config/gateway-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/classes/config/user-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/discovery-service/discovery-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-7-cloud/gateway-service/gateway-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -37,6 +51,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="3GOU3aJz7vTyaIWoLsJKLSFQJLd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,6 +62,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.All in User-Service.executor": "Coverage",
+    "JUnit.GatewayApplicationTests.contextLoads.executor": "Debug",
     "JUnit.NotificationControllerTest.executor": "Coverage",
     "JUnit.NotificationServiceIntegrationTest.executor": "Coverage",
     "JUnit.NotificationServiceTest.executor": "Coverage",
@@ -64,9 +82,13 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.DiscoveryApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.NotificationApplication.executor": "Run",
     "Spring Boot.SpringUserServiceApplication (1).executor": "Run",
     "Spring Boot.SpringUserServiceApplication (2).executor": "Run",
+    "Spring Boot.SpringUserServiceApplication (3).executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "feature/spring-migration",
@@ -109,16 +131,33 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="NotificationApplication" value="STOPPED" />
-              <entry key="SpringUserServiceApplication (1)" value="STOPPED" />
-              <entry key="SpringUserServiceApplication (2)" value="STOPPED" />
+              <entry key="ConfigServerApplication" value="STOPPED" />
+              <entry key="DiscoveryApplication" value="STOPPED" />
+              <entry key="GatewayApplication" value="STOPPED" />
+              <entry key="SpringUserServiceApplication (3)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringUserServiceApplication (2)">
+  <component name="RunManager" selected="JUnit.GatewayApplicationTests.contextLoads">
+    <configuration name="GatewayApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.gateway" />
+      <option name="MAIN_CLASS_NAME" value="com.example.gateway.GatewayApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NotificationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-user-service (1)" />
       <extension name="coverage">
@@ -164,27 +203,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-user-service" />
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.config.ConfigServerApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.notification.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.user.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.notification.controller.UserControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="spring-user-service (1)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notification.NotificationApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.notification.*" />
+          <option name="PATTERN" value="com.example.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,23 +216,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringUserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring-user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
+    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discovery.DiscoveryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringUserServiceApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring-user-service (2)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringUserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring-user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notification.SpringUserServiceApplication" />
+    <configuration name="SpringUserServiceApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-user-service (3)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="JUnit.GatewayApplicationTests.contextLoads" />
         <item itemvalue="JUnit.NotificationServiceIntegrationTest" />
         <item itemvalue="JUnit.NotificationServiceTest" />
         <item itemvalue="JUnit.NotificationControllerTest" />
-        <item itemvalue="Spring Boot.NotificationApplication" />
-        <item itemvalue="JUnit.UserControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +276,8 @@
       <workItem from="1785007896279" duration="2222000" />
       <workItem from="1785041560507" duration="1305000" />
       <workItem from="1785694694438" duration="7221000" />
-      <workItem from="1786288100353" duration="2634000" />
+      <workItem from="1786288100353" duration="4031000" />
+      <workItem from="1786898488158" duration="8819000" />
     </task>
     <servers />
   </component>
