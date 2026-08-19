@@ -10,5 +10,10 @@
     <file url="file://$PROJECT_DIR$/homework-7-cloud/discovery-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/homework-7-cloud/gateway-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/homework-7-cloud/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/homework-8-docker/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/homework-8-docker/discovery-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/homework-8-docker/gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/homework-8-docker/notification-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/homework-8-docker/user-service/src/main/java" charset="UTF-8" />
   </component>
 </project>

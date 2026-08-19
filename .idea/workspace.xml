@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81468ec0-24c1-4ee6-bf7d-0ff630cb3c52" name="Changes" comment="" />
+    <list default="true" id="81468ec0-24c1-4ee6-bf7d-0ff630cb3c52" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,54 +44,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in User-Service.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.GatewayApplicationTests.contextLoads.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.NotificationControllerTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.NotificationServiceIntegrationTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.NotificationServiceTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.UserDaoImplTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Maven.User-Service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.notification-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring-user-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NotificationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringUserServiceApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringUserServiceApplication (2).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringUserServiceApplication (3).executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/spring-migration&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/ASTON/Интенсив/Дз/User-Service/src/main/java/com/masterly/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4597701&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.All in User-Service.executor": "Coverage",
+    "JUnit.GatewayApplicationTests.contextLoads.executor": "Debug",
+    "JUnit.NotificationControllerTest.executor": "Coverage",
+    "JUnit.NotificationServiceIntegrationTest.executor": "Coverage",
+    "JUnit.NotificationServiceTest.executor": "Coverage",
+    "JUnit.UserControllerTest.executor": "Coverage",
+    "JUnit.UserDaoImplTest.executor": "Coverage",
+    "JUnit.UserServiceTest.executor": "Coverage",
+    "Maven.User-Service [clean].executor": "Run",
+    "Maven.config-server [clean].executor": "Run",
+    "Maven.discovery-service [clean].executor": "Run",
+    "Maven.gateway-service [clean].executor": "Run",
+    "Maven.notification-service [clean].executor": "Run",
+    "Maven.spring-user-service [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.DiscoveryApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.NotificationApplication.executor": "Run",
+    "Spring Boot.SpringUserServiceApplication (1).executor": "Run",
+    "Spring Boot.SpringUserServiceApplication (2).executor": "Run",
+    "Spring Boot.SpringUserServiceApplication (3).executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "feature/spring-migration",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/ASTON/Интенсив/Дз/User-Service/homework-8-docker/user-service",
+    "onboarding.tips.debug.path": "D:/ASTON/Интенсив/Дз/User-Service/src/main/java/com/masterly/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4597701",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.notification.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ASTON\Интенсив\Дз\User-Service\homework-8-docker\user-service" />
+      <recent name="D:\ASTON\Интенсив\Дз\User-Service\homework-8-docker\notification-service" />
+      <recent name="D:\ASTON\Интенсив\Дз\User-Service\homework-8-docker\gateway-service" />
+      <recent name="D:\ASTON\Интенсив\Дз\User-Service\homework-8-docker\discovery-service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -184,6 +199,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConfigServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.config.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.config.ConfigServerApplication" />
@@ -197,9 +219,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiscoveryApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-service (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discovery.DiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="discovery-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discovery.DiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,8 +247,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notification-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-user-service (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringUserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringUserServiceApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-user-service (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringUserServiceApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-user-service (3)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringUserServiceApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-user-service (4)" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.SpringUserServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,7 +329,8 @@
       <workItem from="1785041560507" duration="1305000" />
       <workItem from="1785694694438" duration="7221000" />
       <workItem from="1786288100353" duration="4031000" />
-      <workItem from="1786898488158" duration="9155000" />
+      <workItem from="1786898488158" duration="10288000" />
+      <workItem from="1787137248551" duration="7699000" />
     </task>
     <servers />
   </component>

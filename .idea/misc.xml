@@ -12,6 +12,11 @@
         <option value="$PROJECT_DIR$/homework-7-cloud/gateway-service/pom.xml" />
         <option value="$PROJECT_DIR$/homework-7-cloud/user-service/pom.xml" />
         <option value="$PROJECT_DIR$/homework-7-cloud/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/homework-8-docker/notification-service/pom.xml" />
+        <option value="$PROJECT_DIR$/homework-8-docker/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/homework-8-docker/gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/homework-8-docker/discovery-service/pom.xml" />
+        <option value="$PROJECT_DIR$/homework-8-docker/config-server/pom.xml" />
       </list>
     </option>
   </component>
